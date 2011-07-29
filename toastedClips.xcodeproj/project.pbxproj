@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C94B288013E2F626003B5D0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B287F13E2F626003B5D0B /* UIKit.framework */; };
+		C94B288213E2F626003B5D0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B288113E2F626003B5D0B /* Foundation.framework */; };
+		C94B288413E2F626003B5D0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B288313E2F626003B5D0B /* CoreGraphics.framework */; };
+		C94B288A13E2F626003B5D0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C94B288813E2F626003B5D0B /* InfoPlist.strings */; };
+		C94B288D13E2F626003B5D0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C94B288C13E2F626003B5D0B /* main.m */; };
+		C94B289013E2F626003B5D0B /* toastedClipsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.m */; };
+		C94B289413E2F627003B5D0B /* toastedClipsAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C94B289313E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.m */; };
+		C94B289713E2F627003B5D0B /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94B289513E2F627003B5D0B /* MainWindow_iPhone.xib */; };
+		C94B289B13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C94B289A13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.m */; };
+		C94B289E13E2F627003B5D0B /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94B289C13E2F627003B5D0B /* MainWindow_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C94B287B13E2F626003B5D0B /* toastedClips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toastedClips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94B287F13E2F626003B5D0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C94B288113E2F626003B5D0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C94B288313E2F626003B5D0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C94B288713E2F626003B5D0B /* toastedClips-Info.plist */ = {isa = PBXFileReference; path = "toastedClips-Info.plist"; sourceTree = "<group>"; };
+		C94B288913E2F626003B5D0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C94B288B13E2F626003B5D0B /* toastedClips-Prefix.pch */ = {isa = PBXFileReference; path = "toastedClips-Prefix.pch"; sourceTree = "<group>"; };
+		C94B288C13E2F626003B5D0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C94B288E13E2F626003B5D0B /* toastedClipsAppDelegate.h */ = {isa = PBXFileReference; path = toastedClipsAppDelegate.h; sourceTree = "<group>"; };
+		C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toastedClipsAppDelegate.m; sourceTree = "<group>"; };
+		C94B289213E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = toastedClipsAppDelegate_iPhone.h; path = iPhone/toastedClipsAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		C94B289313E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = toastedClipsAppDelegate_iPhone.m; path = iPhone/toastedClipsAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		C94B289613E2F627003B5D0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		C94B289913E2F627003B5D0B /* toastedClipsAppDelegate_iPad.h */ = {isa = PBXFileReference; name = toastedClipsAppDelegate_iPad.h; path = iPad/toastedClipsAppDelegate_iPad.h; sourceTree = "<group>"; };
+		C94B289A13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = toastedClipsAppDelegate_iPad.m; path = iPad/toastedClipsAppDelegate_iPad.m; sourceTree = "<group>"; };
+		C94B289D13E2F627003B5D0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C94B287813E2F626003B5D0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94B288013E2F626003B5D0B /* UIKit.framework in Frameworks */,
+				C94B288213E2F626003B5D0B /* Foundation.framework in Frameworks */,
+				C94B288413E2F626003B5D0B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C94B287013E2F626003B5D0B = {
+			isa = PBXGroup;
+			children = (
+				C94B288513E2F626003B5D0B /* toastedClips */,
+				C94B287E13E2F626003B5D0B /* Frameworks */,
+				C94B287C13E2F626003B5D0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C94B287C13E2F626003B5D0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C94B287B13E2F626003B5D0B /* toastedClips.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C94B287E13E2F626003B5D0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C94B287F13E2F626003B5D0B /* UIKit.framework */,
+				C94B288113E2F626003B5D0B /* Foundation.framework */,
+				C94B288313E2F626003B5D0B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C94B288513E2F626003B5D0B /* toastedClips */ = {
+			isa = PBXGroup;
+			children = (
+				C94B288E13E2F626003B5D0B /* toastedClipsAppDelegate.h */,
+				C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.m */,
+				C94B289113E2F626003B5D0B /* iPhone */,
+				C94B289813E2F627003B5D0B /* iPad */,
+				C94B288613E2F626003B5D0B /* Supporting Files */,
+			);
+			path = toastedClips;
+			sourceTree = "<group>";
+		};
+		C94B288613E2F626003B5D0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C94B288713E2F626003B5D0B /* toastedClips-Info.plist */,
+				C94B288813E2F626003B5D0B /* InfoPlist.strings */,
+				C94B288B13E2F626003B5D0B /* toastedClips-Prefix.pch */,
+				C94B288C13E2F626003B5D0B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C94B289113E2F626003B5D0B /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				C94B289213E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.h */,
+				C94B289313E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.m */,
+				C94B289513E2F627003B5D0B /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		C94B289813E2F627003B5D0B /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				C94B289913E2F627003B5D0B /* toastedClipsAppDelegate_iPad.h */,
+				C94B289A13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.m */,
+				C94B289C13E2F627003B5D0B /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C94B287A13E2F626003B5D0B /* toastedClips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94B28A113E2F627003B5D0B /* Build configuration list for PBXNativeTarget "toastedClips" */;
+			buildPhases = (
+				C94B287713E2F626003B5D0B /* Sources */,
+				C94B287813E2F626003B5D0B /* Frameworks */,
+				C94B287913E2F626003B5D0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = toastedClips;
+			productName = toastedClips;
+			productReference = C94B287B13E2F626003B5D0B /* toastedClips.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C94B287213E2F626003B5D0B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C94B287513E2F626003B5D0B /* Build configuration list for PBXProject "toastedClips" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C94B287013E2F626003B5D0B;
+			productRefGroup = C94B287C13E2F626003B5D0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C94B287A13E2F626003B5D0B /* toastedClips */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C94B287913E2F626003B5D0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94B288A13E2F626003B5D0B /* InfoPlist.strings in Resources */,
+				C94B289713E2F627003B5D0B /* MainWindow_iPhone.xib in Resources */,
+				C94B289E13E2F627003B5D0B /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C94B287713E2F626003B5D0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94B288D13E2F626003B5D0B /* main.m in Sources */,
+				C94B289013E2F626003B5D0B /* toastedClipsAppDelegate.m in Sources */,
+				C94B289413E2F627003B5D0B /* toastedClipsAppDelegate_iPhone.m in Sources */,
+				C94B289B13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C94B288813E2F626003B5D0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C94B288913E2F626003B5D0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C94B289513E2F627003B5D0B /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C94B289613E2F627003B5D0B /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		C94B289C13E2F627003B5D0B /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C94B289D13E2F627003B5D0B /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C94B289F13E2F627003B5D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C94B28A013E2F627003B5D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C94B28A213E2F627003B5D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "toastedClips/toastedClips-Prefix.pch";
+				INFOPLIST_FILE = "toastedClips/toastedClips-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C94B28A313E2F627003B5D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "toastedClips/toastedClips-Prefix.pch";
+				INFOPLIST_FILE = "toastedClips/toastedClips-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C94B287513E2F626003B5D0B /* Build configuration list for PBXProject "toastedClips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94B289F13E2F627003B5D0B /* Debug */,
+				C94B28A013E2F627003B5D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C94B28A113E2F627003B5D0B /* Build configuration list for PBXNativeTarget "toastedClips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94B28A213E2F627003B5D0B /* Debug */,
+				C94B28A313E2F627003B5D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C94B287213E2F626003B5D0B /* Project object */;
+}
