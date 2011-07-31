@@ -25,7 +25,6 @@ GUIElement::GUIElement(NSString* resourceName , NSString* resourceName2, TEPoint
     //1 horizontal
     constPart = new GUIControl(resourceName, position, size) ;
     floatPart  = new GUIControl(resourceName2, position, size) ;
-    constPart->isRotary = false;
     if (type==0) {
         floatPart->isRotary = true;
         floatPart->isSlider =false;
@@ -45,9 +44,9 @@ void GUIElement::update() {
 }
 
 void GUIElement::draw() {
-    
-    floatPart->draw();
     constPart->draw();
+    floatPart->draw();
+    
 }
 
 

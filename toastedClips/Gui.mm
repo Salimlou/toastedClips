@@ -43,7 +43,7 @@ void Gui::start(NSString * str , NSString * str2) {
     point2.y = 240;
     
     TEPoint point3;
-    point3.x = 240;
+    point3.x = 100;
     point3.y = 100; 
     
    
