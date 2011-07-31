@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface toastedClipsAppDelegate : NSObject <UIApplicationDelegate> {
-
+@private
+    UIWindow* mWindow;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+
 
 @end

@@ -7,35 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90B0D0B13E482DE0074E0E6 /* GUIElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = C90B0D0913E482DE0074E0E6 /* GUIElement.mm */; };
+		C93074C713E33E7400AE145F /* konb_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = C93074C613E33E7400AE145F /* konb_circle.png */; };
+		C93074C913E33E7800AE145F /* knob_arrox.png in Resources */ = {isa = PBXBuildFile; fileRef = C93074C813E33E7800AE145F /* knob_arrox.png */; };
 		C94B288013E2F626003B5D0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B287F13E2F626003B5D0B /* UIKit.framework */; };
 		C94B288213E2F626003B5D0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B288113E2F626003B5D0B /* Foundation.framework */; };
 		C94B288413E2F626003B5D0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B288313E2F626003B5D0B /* CoreGraphics.framework */; };
 		C94B288A13E2F626003B5D0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C94B288813E2F626003B5D0B /* InfoPlist.strings */; };
 		C94B288D13E2F626003B5D0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C94B288C13E2F626003B5D0B /* main.m */; };
-		C94B289013E2F626003B5D0B /* toastedClipsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.m */; };
-		C94B289413E2F627003B5D0B /* toastedClipsAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C94B289313E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.m */; };
+		C94B289013E2F626003B5D0B /* toastedClipsAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.mm */; };
+		C94B289413E2F627003B5D0B /* toastedClipsAppDelegate_iPhone.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B289313E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.mm */; };
 		C94B289713E2F627003B5D0B /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94B289513E2F627003B5D0B /* MainWindow_iPhone.xib */; };
-		C94B289B13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C94B289A13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.m */; };
+		C94B289B13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B289A13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.mm */; };
 		C94B289E13E2F627003B5D0B /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94B289C13E2F627003B5D0B /* MainWindow_iPad.xib */; };
+		C94B28A513E2F641003B5D0B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B28A413E2F641003B5D0B /* QuartzCore.framework */; };
+		C94B28A713E2F647003B5D0B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B28A613E2F647003B5D0B /* OpenGLES.framework */; };
+		C94B28AA13E2F68B003B5D0B /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B28A913E2F68B003B5D0B /* EAGLView.mm */; };
+		C94B28B813E2FA4A003B5D0B /* UtilTexture.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B28B513E2FA4A003B5D0B /* UtilTexture.mm */; };
+		C94B28BD13E2FB6B003B5D0B /* GuiEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B28BB13E2FB6B003B5D0B /* GuiEngine.mm */; };
+		C94B28C013E30F26003B5D0B /* Gui.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B28BE13E30F26003B5D0B /* Gui.mm */; };
+		C94B28C413E311E1003B5D0B /* GUIControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B28C213E311E1003B5D0B /* GUIControl.mm */; };
+		C94B28C713E3240F003B5D0B /* heart_jack.png in Resources */ = {isa = PBXBuildFile; fileRef = C94B28C613E3240F003B5D0B /* heart_jack.png */; };
+		C9835B6013E453ED00AF13B4 /* knob-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C9835B5F13E453ED00AF13B4 /* knob-01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C90B0D0913E482DE0074E0E6 /* GUIElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUIElement.mm; sourceTree = "<group>"; };
+		C90B0D0A13E482DE0074E0E6 /* GUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIElement.h; sourceTree = "<group>"; };
+		C93074C613E33E7400AE145F /* konb_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = konb_circle.png; sourceTree = "<group>"; };
+		C93074C813E33E7800AE145F /* knob_arrox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knob_arrox.png; sourceTree = "<group>"; };
 		C94B287B13E2F626003B5D0B /* toastedClips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toastedClips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94B287F13E2F626003B5D0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C94B288113E2F626003B5D0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C94B288313E2F626003B5D0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C94B288713E2F626003B5D0B /* toastedClips-Info.plist */ = {isa = PBXFileReference; path = "toastedClips-Info.plist"; sourceTree = "<group>"; };
+		C94B288713E2F626003B5D0B /* toastedClips-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "toastedClips-Info.plist"; sourceTree = "<group>"; };
 		C94B288913E2F626003B5D0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C94B288B13E2F626003B5D0B /* toastedClips-Prefix.pch */ = {isa = PBXFileReference; path = "toastedClips-Prefix.pch"; sourceTree = "<group>"; };
+		C94B288B13E2F626003B5D0B /* toastedClips-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "toastedClips-Prefix.pch"; sourceTree = "<group>"; };
 		C94B288C13E2F626003B5D0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C94B288E13E2F626003B5D0B /* toastedClipsAppDelegate.h */ = {isa = PBXFileReference; path = toastedClipsAppDelegate.h; sourceTree = "<group>"; };
-		C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toastedClipsAppDelegate.m; sourceTree = "<group>"; };
-		C94B289213E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = toastedClipsAppDelegate_iPhone.h; path = iPhone/toastedClipsAppDelegate_iPhone.h; sourceTree = "<group>"; };
-		C94B289313E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = toastedClipsAppDelegate_iPhone.m; path = iPhone/toastedClipsAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		C94B288E13E2F626003B5D0B /* toastedClipsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toastedClipsAppDelegate.h; sourceTree = "<group>"; };
+		C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = toastedClipsAppDelegate.mm; sourceTree = "<group>"; };
+		C94B289213E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = toastedClipsAppDelegate_iPhone.h; path = iPhone/toastedClipsAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		C94B289313E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = toastedClipsAppDelegate_iPhone.mm; path = iPhone/toastedClipsAppDelegate_iPhone.mm; sourceTree = "<group>"; };
 		C94B289613E2F627003B5D0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		C94B289913E2F627003B5D0B /* toastedClipsAppDelegate_iPad.h */ = {isa = PBXFileReference; name = toastedClipsAppDelegate_iPad.h; path = iPad/toastedClipsAppDelegate_iPad.h; sourceTree = "<group>"; };
-		C94B289A13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = toastedClipsAppDelegate_iPad.m; path = iPad/toastedClipsAppDelegate_iPad.m; sourceTree = "<group>"; };
+		C94B289913E2F627003B5D0B /* toastedClipsAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = toastedClipsAppDelegate_iPad.h; path = iPad/toastedClipsAppDelegate_iPad.h; sourceTree = "<group>"; };
+		C94B289A13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = toastedClipsAppDelegate_iPad.mm; path = iPad/toastedClipsAppDelegate_iPad.mm; sourceTree = "<group>"; };
 		C94B289D13E2F627003B5D0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		C94B28A413E2F641003B5D0B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C94B28A613E2F647003B5D0B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C94B28A813E2F68B003B5D0B /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		C94B28A913E2F68B003B5D0B /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		C94B28B513E2FA4A003B5D0B /* UtilTexture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UtilTexture.mm; sourceTree = "<group>"; };
+		C94B28B613E2FA4A003B5D0B /* UtilTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilTexture.h; sourceTree = "<group>"; };
+		C94B28B713E2FA4A003B5D0B /* UtilTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilTypes.h; sourceTree = "<group>"; };
+		C94B28B913E2FAF8003B5D0B /* UtilsMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMath.h; sourceTree = "<group>"; };
+		C94B28BB13E2FB6B003B5D0B /* GuiEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GuiEngine.mm; sourceTree = "<group>"; };
+		C94B28BC13E2FB6B003B5D0B /* GuiEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiEngine.h; sourceTree = "<group>"; };
+		C94B28BE13E30F26003B5D0B /* Gui.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Gui.mm; sourceTree = "<group>"; };
+		C94B28BF13E30F26003B5D0B /* Gui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gui.h; sourceTree = "<group>"; };
+		C94B28C213E311E1003B5D0B /* GUIControl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUIControl.mm; sourceTree = "<group>"; };
+		C94B28C313E311E1003B5D0B /* GUIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIControl.h; sourceTree = "<group>"; };
+		C94B28C613E3240F003B5D0B /* heart_jack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_jack.png; sourceTree = "<group>"; };
+		C9835B5F13E453ED00AF13B4 /* knob-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "knob-01.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94B28A713E2F647003B5D0B /* OpenGLES.framework in Frameworks */,
+				C94B28A513E2F641003B5D0B /* QuartzCore.framework in Frameworks */,
 				C94B288013E2F626003B5D0B /* UIKit.framework in Frameworks */,
 				C94B288213E2F626003B5D0B /* Foundation.framework in Frameworks */,
 				C94B288413E2F626003B5D0B /* CoreGraphics.framework in Frameworks */,
@@ -72,6 +106,8 @@
 		C94B287E13E2F626003B5D0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C94B28A613E2F647003B5D0B /* OpenGLES.framework */,
+				C94B28A413E2F641003B5D0B /* QuartzCore.framework */,
 				C94B287F13E2F626003B5D0B /* UIKit.framework */,
 				C94B288113E2F626003B5D0B /* Foundation.framework */,
 				C94B288313E2F626003B5D0B /* CoreGraphics.framework */,
@@ -82,11 +118,13 @@
 		C94B288513E2F626003B5D0B /* toastedClips */ = {
 			isa = PBXGroup;
 			children = (
+				C94B28C513E323BC003B5D0B /* images */,
 				C94B288E13E2F626003B5D0B /* toastedClipsAppDelegate.h */,
-				C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.m */,
+				C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.mm */,
 				C94B289113E2F626003B5D0B /* iPhone */,
 				C94B289813E2F627003B5D0B /* iPad */,
 				C94B288613E2F626003B5D0B /* Supporting Files */,
+				C94B28AB13E2F699003B5D0B /* Core */,
 			);
 			path = toastedClips;
 			sourceTree = "<group>";
@@ -106,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				C94B289213E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.h */,
-				C94B289313E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.m */,
+				C94B289313E2F626003B5D0B /* toastedClipsAppDelegate_iPhone.mm */,
 				C94B289513E2F627003B5D0B /* MainWindow_iPhone.xib */,
 			);
 			name = iPhone;
@@ -116,10 +154,66 @@
 			isa = PBXGroup;
 			children = (
 				C94B289913E2F627003B5D0B /* toastedClipsAppDelegate_iPad.h */,
-				C94B289A13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.m */,
+				C94B289A13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.mm */,
 				C94B289C13E2F627003B5D0B /* MainWindow_iPad.xib */,
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		C94B28AB13E2F699003B5D0B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C94B28C113E311C1003B5D0B /* Control */,
+				C94B28BA13E2FB45003B5D0B /* Engine */,
+				C94B28B413E2FA1E003B5D0B /* Utils */,
+				C94B28A813E2F68B003B5D0B /* EAGLView.h */,
+				C94B28A913E2F68B003B5D0B /* EAGLView.mm */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C94B28B413E2FA1E003B5D0B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C94B28B913E2FAF8003B5D0B /* UtilsMath.h */,
+				C94B28B513E2FA4A003B5D0B /* UtilTexture.mm */,
+				C94B28B613E2FA4A003B5D0B /* UtilTexture.h */,
+				C94B28B713E2FA4A003B5D0B /* UtilTypes.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		C94B28BA13E2FB45003B5D0B /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				C94B28BB13E2FB6B003B5D0B /* GuiEngine.mm */,
+				C94B28BC13E2FB6B003B5D0B /* GuiEngine.h */,
+				C94B28BE13E30F26003B5D0B /* Gui.mm */,
+				C94B28BF13E30F26003B5D0B /* Gui.h */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+		C94B28C113E311C1003B5D0B /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				C94B28C213E311E1003B5D0B /* GUIControl.mm */,
+				C94B28C313E311E1003B5D0B /* GUIControl.h */,
+				C90B0D0913E482DE0074E0E6 /* GUIElement.mm */,
+				C90B0D0A13E482DE0074E0E6 /* GUIElement.h */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
+		C94B28C513E323BC003B5D0B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C9835B5F13E453ED00AF13B4 /* knob-01.png */,
+				C93074C813E33E7800AE145F /* knob_arrox.png */,
+				C93074C613E33E7400AE145F /* konb_circle.png */,
+				C94B28C613E3240F003B5D0B /* heart_jack.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +266,10 @@
 				C94B288A13E2F626003B5D0B /* InfoPlist.strings in Resources */,
 				C94B289713E2F627003B5D0B /* MainWindow_iPhone.xib in Resources */,
 				C94B289E13E2F627003B5D0B /* MainWindow_iPad.xib in Resources */,
+				C94B28C713E3240F003B5D0B /* heart_jack.png in Resources */,
+				C93074C713E33E7400AE145F /* konb_circle.png in Resources */,
+				C93074C913E33E7800AE145F /* knob_arrox.png in Resources */,
+				C9835B6013E453ED00AF13B4 /* knob-01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,9 +281,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C94B288D13E2F626003B5D0B /* main.m in Sources */,
-				C94B289013E2F626003B5D0B /* toastedClipsAppDelegate.m in Sources */,
-				C94B289413E2F627003B5D0B /* toastedClipsAppDelegate_iPhone.m in Sources */,
-				C94B289B13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.m in Sources */,
+				C94B289013E2F626003B5D0B /* toastedClipsAppDelegate.mm in Sources */,
+				C94B289413E2F627003B5D0B /* toastedClipsAppDelegate_iPhone.mm in Sources */,
+				C94B289B13E2F627003B5D0B /* toastedClipsAppDelegate_iPad.mm in Sources */,
+				C94B28AA13E2F68B003B5D0B /* EAGLView.mm in Sources */,
+				C94B28B813E2FA4A003B5D0B /* UtilTexture.mm in Sources */,
+				C94B28BD13E2FB6B003B5D0B /* GuiEngine.mm in Sources */,
+				C94B28C013E30F26003B5D0B /* Gui.mm in Sources */,
+				C94B28C413E311E1003B5D0B /* GUIControl.mm in Sources */,
+				C90B0D0B13E482DE0074E0E6 /* GUIElement.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +330,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -243,6 +348,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -300,6 +406,7 @@
 				C94B28A313E2F627003B5D0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
