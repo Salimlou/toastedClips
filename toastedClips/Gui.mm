@@ -42,24 +42,28 @@ void Gui::start(NSString * str , NSString * str2) {
     point2.x = 160;
     point2.y = 240;
     
+    TEPoint point3;
+    point3.x = 240;
+    point3.y = 100; 
+    
    
     
-    getSharedInstance()->knob = new GUIElement(str,str2, point2, size2) ;;
-    
-    // if (!knobCircle) {
-   //     exit(1);
-  //  }
-//    if (!knobArrow) {
-//        exit(1);
-//    }
+    getSharedInstance()->knob = new GUIElement(str,str2, point2, size2,0) ;
+    getSharedInstance()->slide = new GUIElement(@"sliderFixe", @"sliderFloat",point3 , size2,1);
+  
     
 }
 
 void Gui::run() {
     getSharedInstance()->knob->update();
     getSharedInstance()->knob->draw();
+    getSharedInstance()->slide->update();
+    getSharedInstance()->slide->draw();
 }
 
 GUIElement * Gui::getElement() {
     return getSharedInstance()->knob;
+}
+GUIElement * Gui::getElement2() {
+    return getSharedInstance()->slide;
 }

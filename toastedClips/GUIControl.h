@@ -27,6 +27,7 @@ public:
     int mWidth;
 	int mHeight;
     bool isRotary;
+    bool isSlider;
     TEPoint mPosition;
     float angle;
     

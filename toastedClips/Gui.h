@@ -23,9 +23,10 @@ public:
     virtual void run();
     static Gui * getSharedInstance();
     GUIElement * getElement();
+    GUIElement * getElement2();
 private:
     GUIElement * knob;
-    
+    GUIElement * slide; 
 
 };
 

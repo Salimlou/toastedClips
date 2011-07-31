@@ -61,7 +61,11 @@
         [self startAnimation];
          NSLog(@"create ES context");
     }
-   
+      
+    
+    //initialisation audio
+    djMixer = [[DJMixer alloc]init];
+    [djMixer play];
     return self;
 }
 
@@ -123,6 +127,11 @@
             [djMixer changeCrossFaderAmount:Gui::getSharedInstance()->getElement()->value];
         }
 
+        if (Gui::getSharedInstance()->getElement2()->containsPoint(point)) {
+            NSLog(@"You are IN Mpbed");
+            Gui::getSharedInstance()->getElement2()->doExecute(point);
+           // [djMixer changeCrossFaderAmount:Gui::getSharedInstance()->getElement()->value];
+        }
     }
 }
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {

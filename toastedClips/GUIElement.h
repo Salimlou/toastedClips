@@ -19,7 +19,7 @@ private:
     
 public:
     GUIElement();
-    GUIElement(NSString* constPart,NSString* floatPart, TEPoint position, TESize size);
+    GUIElement(NSString* constPart,NSString* floatPart, TEPoint position, TESize size,int type);
     void update();
 	void draw();
     bool containsPoint(CGPoint point);

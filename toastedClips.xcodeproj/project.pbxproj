@@ -34,6 +34,8 @@
 		FA66CB4513E5A89000901A6D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA66CB4413E5A89000901A6D /* AudioToolbox.framework */; };
 		FA66CB4C13E5A8EF00901A6D /* funk stabs 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */; };
 		FA66CB4D13E5A8EF00901A6D /* funkBeats.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA66CB4B13E5A8EF00901A6D /* funkBeats.wav */; };
+		FAADA1A013E5EAAB000B9068 /* sliderFloat.png in Resources */ = {isa = PBXBuildFile; fileRef = FAADA19E13E5EAAB000B9068 /* sliderFloat.png */; };
+		FAADA1A113E5EAAB000B9068 /* sliderFixe.png in Resources */ = {isa = PBXBuildFile; fileRef = FAADA19F13E5EAAB000B9068 /* sliderFixe.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +83,8 @@
 		FA66CB4413E5A89000901A6D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "funk stabs 3.wav"; sourceTree = "<group>"; };
 		FA66CB4B13E5A8EF00901A6D /* funkBeats.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = funkBeats.wav; sourceTree = "<group>"; };
+		FAADA19E13E5EAAB000B9068 /* sliderFloat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderFloat.png; sourceTree = "<group>"; };
+		FAADA19F13E5EAAB000B9068 /* sliderFixe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderFixe.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,8 @@
 		C94B28C513E323BC003B5D0B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FAADA19E13E5EAAB000B9068 /* sliderFloat.png */,
+				FAADA19F13E5EAAB000B9068 /* sliderFixe.png */,
 				C9835B5F13E453ED00AF13B4 /* knob-01.png */,
 				C93074C813E33E7800AE145F /* knob_arrox.png */,
 				C93074C613E33E7400AE145F /* konb_circle.png */,
@@ -294,6 +300,8 @@
 				C9835B6013E453ED00AF13B4 /* knob-01.png in Resources */,
 				FA66CB4C13E5A8EF00901A6D /* funk stabs 3.wav in Resources */,
 				FA66CB4D13E5A8EF00901A6D /* funkBeats.wav in Resources */,
+				FAADA1A013E5EAAB000B9068 /* sliderFloat.png in Resources */,
+				FAADA1A113E5EAAB000B9068 /* sliderFixe.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,13 +20,19 @@
 
 GUIElement::GUIElement(){}
 
-GUIElement::GUIElement(NSString* resourceName , NSString* resourceName2, TEPoint position, TESize size) {
-    
+GUIElement::GUIElement(NSString* resourceName , NSString* resourceName2, TEPoint position, TESize size,int type) {
+    //0 rotory
+    //1 horizontal
     constPart = new GUIControl(resourceName, position, size) ;
     floatPart  = new GUIControl(resourceName2, position, size) ;
     constPart->isRotary = false;
-    floatPart->isRotary = true;
-    
+    if (type==0) {
+        floatPart->isRotary = true;
+        floatPart->isSlider =false;
+    }else{
+        floatPart->isRotary = false;
+        floatPart->isSlider =true;
+    }
     minValue = 0.0f;
 	maxValue = 1.0f;
 	value = defaultValue = 0.5f;
@@ -39,8 +45,9 @@ void GUIElement::update() {
 }
 
 void GUIElement::draw() {
-    constPart->draw();
+    
     floatPart->draw();
+    constPart->draw();
 }
 
 

@@ -59,23 +59,25 @@ void GUIControl::draw() {
         
 //	} else {*/
     
-		glPushMatrix();
-       
-        
-       if (isRotary) {
-            glTranslatef(mPosition.x - (mWidth / 4) , mPosition.y- (mWidth / 4), 0.0f);
-           // glRotatef(180,0, 0 , 1);
-            glRotatef(angle,0, 0 , 1);
-           glTranslatef(+ (mWidth/4), + (mWidth/4), 0.0f);
-       }else{
-            glTranslatef(mPosition.x ,mPosition.y, 0.0f);
-       }
-		glTexCoordPointer(2, GL_FLOAT, 0, mTexture->mTextureBuffer);
-		glVertexPointer(2, GL_FLOAT, 0, mTexture->mVertexBuffer);
-		glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
+    glPushMatrix();
     
-   
-		glPopMatrix();
+    
+    if (isRotary) {
+        glTranslatef(mPosition.x - (mWidth / 4) , mPosition.y- (mWidth / 4), 0.0f);
+        // glRotatef(180,0, 0 , 1);
+        glRotatef(angle,0, 0 , 1);
+        glTranslatef(+ (mWidth/4), + (mWidth/4), 0.0f);
+    } else if(isSlider){ 
+        glTranslatef(mPosition.x ,mPosition.y, 0.0f);
+    }else{
+        glTranslatef(mPosition.x ,mPosition.y, 0.0f);
+    }
+    glTexCoordPointer(2, GL_FLOAT, 0, mTexture->mTextureBuffer);
+    glVertexPointer(2, GL_FLOAT, 0, mTexture->mVertexBuffer);
+    glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
+    
+    
+    glPopMatrix();
 	
     
 }
