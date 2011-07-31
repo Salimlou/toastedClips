@@ -24,7 +24,8 @@ GUIControl::GUIControl(NSString* resourceName, TEPoint position, TESize size) {
         size = mTexture->getBitmapSize();
         // NSLog(@"TAille image %f %f " , mTexture->getBitmapSize().width ,mTexture->getBitmapSize().height);
     }
-   
+    mWidth = mTexture->mWidth;
+    mHeight = mTexture->mHeight;
    
     mCrop[0] = 0;
     mCrop[1] = mTexture->getBitmapSize().height;
@@ -37,11 +38,11 @@ GUIControl::GUIControl(NSString* resourceName, TEPoint position, TESize size) {
 }
 
 void GUIControl::update() {
-    if (angle ==360) {
-        angle =0;
-    }else{
-        angle =  angle++;
-    }
+    //if (angle ==360) {
+    //    angle =0;
+   // }else{
+   //     angle =  angle++;
+   // }
 
 }
 
@@ -62,17 +63,20 @@ void GUIControl::draw() {
        
         
        if (isRotary) {
-            glTranslatef(mPosition.x - (mHeight /2 ),mPosition.y + (mWidth /2 ), 0.0f);
-            glRotatef(angle,0, 0 ,1 );
-            glTranslatef( + (mHeight/2  ), - (mWidth /2 ), 0.0f);
+            glTranslatef(mPosition.x - (mWidth / 4) , mPosition.y- (mWidth / 4), 0.0f);
+           // glRotatef(180,0, 0 , 1);
+            glRotatef(angle,0, 0 , 1);
+           glTranslatef(+ (mWidth/4), + (mWidth/4), 0.0f);
        }else{
             glTranslatef(mPosition.x ,mPosition.y, 0.0f);
        }
 		glTexCoordPointer(2, GL_FLOAT, 0, mTexture->mTextureBuffer);
 		glVertexPointer(2, GL_FLOAT, 0, mTexture->mVertexBuffer);
 		glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
+    
+   
 		glPopMatrix();
-	//}
+	
     
 }
 

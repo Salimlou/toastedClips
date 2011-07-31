@@ -12,7 +12,7 @@
 @implementation EAGLView
 
 @synthesize context;
-
+@synthesize djMixer;
 + (Class)layerClass
 {
     return [CAEAGLLayer class];
@@ -76,6 +76,7 @@
     CADisplayLink *aDisplayLink = [[UIScreen mainScreen] displayLinkWithTarget:self selector:@selector(drawFrame)];
     [aDisplayLink setFrameInterval:1/60];
     [aDisplayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+  	
 }
 
 - (void)drawFrame
@@ -98,7 +99,7 @@
         TEPoint p;
         p.x = x;
         p.y = y;
-        if (Gui::getSharedInstance()->getElement()->containsPoint(p)) {
+        if (Gui::getSharedInstance()->getElement()->containsPoint(point)) {
             NSLog(@"You are IN");
             
         }
@@ -116,9 +117,10 @@
         TEPoint p;
         p.x = x;
         p.y = y;
-        if (Gui::getSharedInstance()->getElement()->containsPoint(p)) {
-            NSLog(@"You are IN");
-            
+        if (Gui::getSharedInstance()->getElement()->containsPoint(point)) {
+            NSLog(@"You are IN Mpbed");
+            Gui::getSharedInstance()->getElement()->doExecute(point);
+            [djMixer changeCrossFaderAmount:Gui::getSharedInstance()->getElement()->value];
         }
 
     }
@@ -135,7 +137,7 @@
         TEPoint p;
         p.x = x;
         p.y = y;
-        if (Gui::getSharedInstance()->getElement()->containsPoint(p)) {
+        if (Gui::getSharedInstance()->getElement()->containsPoint(point)) {
             NSLog(@"You are IN");
 
         }

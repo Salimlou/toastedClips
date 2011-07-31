@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DJMixer.h"
 
 @interface toastedClipsAppDelegate : NSObject <UIApplicationDelegate> {
 @private
     UIWindow* mWindow;
+    DJMixer *djMixer;
 }
 
 

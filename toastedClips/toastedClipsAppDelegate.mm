@@ -17,11 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    djMixer = [[DJMixer alloc]init];
+      [djMixer play];
     CGRect frame = [[UIScreen mainScreen] bounds];
     
     EAGLView* view = [[EAGLView alloc] initWithFrame:frame game:nil];
     mWindow = [[UIWindow alloc] initWithFrame:frame];
     [mWindow addSubview:view];
+    view.djMixer = djMixer;
     [mWindow makeKeyAndVisible];
     return YES;
 }

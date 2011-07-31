@@ -11,6 +11,7 @@
 #import <OpenGLES/ES1/glext.h>
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
+#import "DJMixer.h"
 
 #import "Gui.h"
 
@@ -22,8 +23,10 @@
     GLuint mDefaultFramebuffer;
     GLuint mColorRenderbuffer;
     Gui* mGame;
+    DJMixer * djMixer;
 }
 
+@property (nonatomic, retain)DJMixer *djMixer;
 @property (nonatomic, retain) EAGLContext *context;
 
 - (id)initWithFrame:(CGRect)frame game:(Gui*) game ;

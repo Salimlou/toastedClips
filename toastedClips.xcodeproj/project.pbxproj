@@ -29,6 +29,11 @@
 		C94B28C413E311E1003B5D0B /* GUIControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B28C213E311E1003B5D0B /* GUIControl.mm */; };
 		C94B28C713E3240F003B5D0B /* heart_jack.png in Resources */ = {isa = PBXBuildFile; fileRef = C94B28C613E3240F003B5D0B /* heart_jack.png */; };
 		C9835B6013E453ED00AF13B4 /* knob-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C9835B5F13E453ED00AF13B4 /* knob-01.png */; };
+		FA66CB3D13E5A48700901A6D /* DJMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA66CB3913E5A48700901A6D /* DJMixer.m */; };
+		FA66CB4113E5A5CB00901A6D /* InMemoryAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.m */; };
+		FA66CB4513E5A89000901A6D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA66CB4413E5A89000901A6D /* AudioToolbox.framework */; };
+		FA66CB4C13E5A8EF00901A6D /* funk stabs 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */; };
+		FA66CB4D13E5A8EF00901A6D /* funkBeats.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA66CB4B13E5A8EF00901A6D /* funkBeats.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,14 @@
 		C94B28C313E311E1003B5D0B /* GUIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIControl.h; sourceTree = "<group>"; };
 		C94B28C613E3240F003B5D0B /* heart_jack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_jack.png; sourceTree = "<group>"; };
 		C9835B5F13E453ED00AF13B4 /* knob-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "knob-01.png"; sourceTree = "<group>"; };
+		FA66CB3813E5A48700901A6D /* DJMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJMixer.h; sourceTree = "<group>"; };
+		FA66CB3913E5A48700901A6D /* DJMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJMixer.m; sourceTree = "<group>"; };
+		FA66CB3F13E5A5CA00901A6D /* InMemoryAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMemoryAudioFile.h; sourceTree = "<group>"; };
+		FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InMemoryAudioFile.m; sourceTree = "<group>"; };
+		FA66CB4213E5A86D00901A6D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		FA66CB4413E5A89000901A6D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "funk stabs 3.wav"; sourceTree = "<group>"; };
+		FA66CB4B13E5A8EF00901A6D /* funkBeats.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = funkBeats.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA66CB4513E5A89000901A6D /* AudioToolbox.framework in Frameworks */,
 				C94B28A713E2F647003B5D0B /* OpenGLES.framework in Frameworks */,
 				C94B28A513E2F641003B5D0B /* QuartzCore.framework in Frameworks */,
 				C94B288013E2F626003B5D0B /* UIKit.framework in Frameworks */,
@@ -89,6 +103,8 @@
 		C94B287013E2F626003B5D0B = {
 			isa = PBXGroup;
 			children = (
+				FA66CB4413E5A89000901A6D /* AudioToolbox.framework */,
+				FA66CB4213E5A86D00901A6D /* CoreAudio.framework */,
 				C94B288513E2F626003B5D0B /* toastedClips */,
 				C94B287E13E2F626003B5D0B /* Frameworks */,
 				C94B287C13E2F626003B5D0B /* Products */,
@@ -118,6 +134,12 @@
 		C94B288513E2F626003B5D0B /* toastedClips */ = {
 			isa = PBXGroup;
 			children = (
+				FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */,
+				FA66CB4B13E5A8EF00901A6D /* funkBeats.wav */,
+				FA66CB3F13E5A5CA00901A6D /* InMemoryAudioFile.h */,
+				FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.m */,
+				FA66CB3813E5A48700901A6D /* DJMixer.h */,
+				FA66CB3913E5A48700901A6D /* DJMixer.m */,
 				C94B28C513E323BC003B5D0B /* images */,
 				C94B288E13E2F626003B5D0B /* toastedClipsAppDelegate.h */,
 				C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.mm */,
@@ -270,6 +292,8 @@
 				C93074C713E33E7400AE145F /* konb_circle.png in Resources */,
 				C93074C913E33E7800AE145F /* knob_arrox.png in Resources */,
 				C9835B6013E453ED00AF13B4 /* knob-01.png in Resources */,
+				FA66CB4C13E5A8EF00901A6D /* funk stabs 3.wav in Resources */,
+				FA66CB4D13E5A8EF00901A6D /* funkBeats.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +314,8 @@
 				C94B28C013E30F26003B5D0B /* Gui.mm in Sources */,
 				C94B28C413E311E1003B5D0B /* GUIControl.mm in Sources */,
 				C90B0D0B13E482DE0074E0E6 /* GUIElement.mm in Sources */,
+				FA66CB3D13E5A48700901A6D /* DJMixer.m in Sources */,
+				FA66CB4113E5A5CB00901A6D /* InMemoryAudioFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,12 +389,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "3rd Party Mac Developer Application";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "toastedClips/toastedClips-Prefix.pch";
 				INFOPLIST_FILE = "toastedClips/toastedClips-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -377,11 +407,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "3rd Party Mac Developer Application";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "toastedClips/toastedClips-Prefix.pch";
 				INFOPLIST_FILE = "toastedClips/toastedClips-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

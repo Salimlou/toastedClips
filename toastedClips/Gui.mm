@@ -33,21 +33,14 @@ Gui * Gui::getSharedInstance(){
 }
 void Gui::start(NSString * str , NSString * str2) {
     
-    TESize size;
-    size.height = 0;
-    size.width = 0;
     
     TESize size2;
     size2.height = 0;
     size2.width = 0;
     
-    TEPoint point;
-    point.x = 0;
-    point.y = 0;
-    
     TEPoint point2;
-    point2.x = 240;
-    point2.y = 160;
+    point2.x = 160;
+    point2.y = 240;
     
    
     

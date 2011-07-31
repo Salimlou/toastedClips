@@ -101,7 +101,7 @@ void GuiEngine::graphicsChange(int width, int height) {
      glMatrixMode(GL_MODELVIEW);
      glLoadIdentity();
      */
-	bool useOrtho = true;
+	bool useOrtho = false;
 	const int scaleFactor = 1;
 	const int zDepth = height / (2 / scaleFactor);
 	const float ratio = (float)width / height;

@@ -26,6 +26,8 @@ public:
 	TEPoint mPosition;
     TESize getBitmapSize() const;
 	TESize getCropSize() const;
+    float mHeight;
+    float mWidth;
 };
 
 #endif
