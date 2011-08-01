@@ -23,8 +23,8 @@ GUIElement::GUIElement(){}
 GUIElement::GUIElement(NSString* resourceName , NSString* resourceName2, TEPoint position, TESize size,int type) {
     //0 rotory
     //1 horizontal
-    constPart = new GUIControl(resourceName, position, size) ;
-    floatPart  = new GUIControl(resourceName2, position, size) ;
+    constPart = new GUIControl(resourceName, position, size , this) ;
+    floatPart  = new GUIControl(resourceName2, position, size , this) ;
     if (type==0) {
         floatPart->isRotary = true;
         floatPart->isSlider =false;

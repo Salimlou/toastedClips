@@ -48,10 +48,10 @@ void Gui::start(NSString * str , NSString * str2) {
     
    
     
-    GUIElement * knob = new GUIElement(str,str2, point2, size2,0) ;
-    GUIElement * slide = new GUIElement(@"sliderFixe", @"sliderFloat",point3 , size2,1);
+    GUIElement * knob = new GUIElement(@"tes-01",@"tesF", point2, size2,0) ;
+   // GUIElement * slide = new GUIElement(@"sliderFixe", @"sliderFloat",point3 , size2,1);
     getSharedInstance()->addControls(knob);
-    getSharedInstance()->addControls(slide);
+   // getSharedInstance()->addControls(slide);
   
     
 }

@@ -28,9 +28,12 @@
 		C94B28C013E30F26003B5D0B /* Gui.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B28BE13E30F26003B5D0B /* Gui.mm */; };
 		C94B28C413E311E1003B5D0B /* GUIControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = C94B28C213E311E1003B5D0B /* GUIControl.mm */; };
 		C94B28C713E3240F003B5D0B /* heart_jack.png in Resources */ = {isa = PBXBuildFile; fileRef = C94B28C613E3240F003B5D0B /* heart_jack.png */; };
+		C96E30F013E6F73C006415CB /* tes.png in Resources */ = {isa = PBXBuildFile; fileRef = C96E30EE13E6F73C006415CB /* tes.png */; };
+		C96E30F513E7059C006415CB /* tesF.png in Resources */ = {isa = PBXBuildFile; fileRef = C96E30F413E7059C006415CB /* tesF.png */; };
+		C96E30F713E707D7006415CB /* tes-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C96E30F613E707D6006415CB /* tes-01.png */; };
+		C96E30F913E70D1F006415CB /* DJMixer.mm in Sources */ = {isa = PBXBuildFile; fileRef = C96E30F813E70D1E006415CB /* DJMixer.mm */; };
 		C9835B6013E453ED00AF13B4 /* knob-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C9835B5F13E453ED00AF13B4 /* knob-01.png */; };
-		FA66CB3D13E5A48700901A6D /* DJMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA66CB3913E5A48700901A6D /* DJMixer.m */; };
-		FA66CB4113E5A5CB00901A6D /* InMemoryAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.m */; };
+		FA66CB4113E5A5CB00901A6D /* InMemoryAudioFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.mm */; };
 		FA66CB4513E5A89000901A6D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA66CB4413E5A89000901A6D /* AudioToolbox.framework */; };
 		FA66CB4C13E5A8EF00901A6D /* funk stabs 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */; };
 		FA66CB4D13E5A8EF00901A6D /* funkBeats.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA66CB4B13E5A8EF00901A6D /* funkBeats.wav */; };
@@ -74,11 +77,14 @@
 		C94B28C213E311E1003B5D0B /* GUIControl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUIControl.mm; sourceTree = "<group>"; };
 		C94B28C313E311E1003B5D0B /* GUIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIControl.h; sourceTree = "<group>"; };
 		C94B28C613E3240F003B5D0B /* heart_jack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_jack.png; sourceTree = "<group>"; };
+		C96E30EE13E6F73C006415CB /* tes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tes.png; sourceTree = "<group>"; };
+		C96E30F413E7059C006415CB /* tesF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesF.png; sourceTree = "<group>"; };
+		C96E30F613E707D6006415CB /* tes-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tes-01.png"; sourceTree = "<group>"; };
+		C96E30F813E70D1E006415CB /* DJMixer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DJMixer.mm; sourceTree = "<group>"; };
 		C9835B5F13E453ED00AF13B4 /* knob-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "knob-01.png"; sourceTree = "<group>"; };
 		FA66CB3813E5A48700901A6D /* DJMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJMixer.h; sourceTree = "<group>"; };
-		FA66CB3913E5A48700901A6D /* DJMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJMixer.m; sourceTree = "<group>"; };
 		FA66CB3F13E5A5CA00901A6D /* InMemoryAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMemoryAudioFile.h; sourceTree = "<group>"; };
-		FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InMemoryAudioFile.m; sourceTree = "<group>"; };
+		FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InMemoryAudioFile.mm; sourceTree = "<group>"; };
 		FA66CB4213E5A86D00901A6D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		FA66CB4413E5A89000901A6D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "funk stabs 3.wav"; sourceTree = "<group>"; };
@@ -138,12 +144,12 @@
 		C94B288513E2F626003B5D0B /* toastedClips */ = {
 			isa = PBXGroup;
 			children = (
+				C96E30F813E70D1E006415CB /* DJMixer.mm */,
 				FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */,
 				FA66CB4B13E5A8EF00901A6D /* funkBeats.wav */,
 				FA66CB3F13E5A5CA00901A6D /* InMemoryAudioFile.h */,
-				FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.m */,
+				FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.mm */,
 				FA66CB3813E5A48700901A6D /* DJMixer.h */,
-				FA66CB3913E5A48700901A6D /* DJMixer.m */,
 				C94B28C513E323BC003B5D0B /* images */,
 				C94B288E13E2F626003B5D0B /* toastedClipsAppDelegate.h */,
 				C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.mm */,
@@ -234,6 +240,9 @@
 		C94B28C513E323BC003B5D0B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C96E30F613E707D6006415CB /* tes-01.png */,
+				C96E30F413E7059C006415CB /* tesF.png */,
+				C96E30EE13E6F73C006415CB /* tes.png */,
 				FAADA19E13E5EAAB000B9068 /* sliderFloat.png */,
 				FAADA19F13E5EAAB000B9068 /* sliderFixe.png */,
 				C9835B5F13E453ED00AF13B4 /* knob-01.png */,
@@ -302,6 +311,9 @@
 				FA66CB4D13E5A8EF00901A6D /* funkBeats.wav in Resources */,
 				FAADA1A013E5EAAB000B9068 /* sliderFloat.png in Resources */,
 				FAADA1A113E5EAAB000B9068 /* sliderFixe.png in Resources */,
+				C96E30F013E6F73C006415CB /* tes.png in Resources */,
+				C96E30F513E7059C006415CB /* tesF.png in Resources */,
+				C96E30F713E707D7006415CB /* tes-01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +334,8 @@
 				C94B28C013E30F26003B5D0B /* Gui.mm in Sources */,
 				C94B28C413E311E1003B5D0B /* GUIControl.mm in Sources */,
 				C90B0D0B13E482DE0074E0E6 /* GUIElement.mm in Sources */,
-				FA66CB3D13E5A48700901A6D /* DJMixer.m in Sources */,
-				FA66CB4113E5A5CB00901A6D /* InMemoryAudioFile.m in Sources */,
+				FA66CB4113E5A5CB00901A6D /* InMemoryAudioFile.mm in Sources */,
+				C96E30F913E70D1F006415CB /* DJMixer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

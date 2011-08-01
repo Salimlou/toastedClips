@@ -5,6 +5,8 @@
 //  Created by emsi on 30/07/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
+#ifndef GUIELEMENT
+#define GUIELEMENT
 
 #include "UtilTypes.h"
 #include "GUIControl.h"
@@ -47,3 +49,5 @@ public:
     
 
 };
+
+#endif

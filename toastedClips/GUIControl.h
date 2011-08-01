@@ -11,17 +11,20 @@
 
 #include "UtilTypes.h"
 #include "UtilTexture.h"
+#include "GUIElement.h"
+
 
 class GUIControl {
 private:
 	UtilTexture* mTexture;
 	int mCrop[4];
+    GUIElement * parent;
 	
     
     
 public:
     GUIControl();
-    GUIControl(NSString* resourceName, TEPoint position, TESize size);
+    GUIControl(NSString* resourceName, TEPoint position, TESize size, GUIElement * parent );
     void update();
 	void draw();
     int mWidth;

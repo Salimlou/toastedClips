@@ -54,7 +54,7 @@
                                         [NSNumber numberWithBool:FALSE], kEAGLDrawablePropertyRetainedBacking,
                                         kEAGLColorFormatRGBA8, kEAGLDrawablePropertyColorFormat,
                                         nil];
-        NSLog(@" %d   %d",mFramebufferWidth,mFramebufferHeight);
+        NSLog(@"taille frame buffer width  %d height   %d",mFramebufferWidth,mFramebufferHeight);
       
         Gui::getSharedInstance()->initGraphics(mFramebufferWidth, mFramebufferHeight);
          Gui::getSharedInstance()->start(@"konb_circle",@"knob-01"); 
