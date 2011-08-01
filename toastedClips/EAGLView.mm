@@ -12,7 +12,7 @@
 @implementation EAGLView
 
 @synthesize context;
-
+@synthesize djMixer;
 + (Class)layerClass
 {
     return [CAEAGLLayer class];
@@ -24,8 +24,8 @@
     if (!gui) {
         exit(1);
     }
-	//frame.size.width = game->mWidth * scaleFactor;
-	//frame.size.height = game->mHeight * scaleFactor;
+	frame.size.width = gui->mWidth * scaleFactor;
+	frame.size.height = gui->mHeight * scaleFactor;
     self = [super initWithFrame:frame];
 	if (self) {
        
@@ -61,7 +61,11 @@
         [self startAnimation];
          NSLog(@"create ES context");
     }
-   
+      
+    
+    //initialisation audio
+    djMixer = [[DJMixer alloc]init];
+    [djMixer play];
     return self;
 }
 
@@ -76,6 +80,7 @@
     CADisplayLink *aDisplayLink = [[UIScreen mainScreen] displayLinkWithTarget:self selector:@selector(drawFrame)];
     [aDisplayLink setFrameInterval:1/60];
     [aDisplayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+  	
 }
 
 - (void)drawFrame
@@ -98,9 +103,10 @@
         TEPoint p;
         p.x = x;
         p.y = y;
-        if (Gui::getSharedInstance()->getElement()->containsPoint(p)) {
-            NSLog(@"You are IN");
-            
+        GUIElement * element = Gui::getSharedInstance()->getElementByTouch(point);
+        if (element != NULL) {
+            element->doExecute(point);
+            [djMixer changeCrossFaderAmount:element->value];
         }
 
     }
@@ -116,11 +122,11 @@
         TEPoint p;
         p.x = x;
         p.y = y;
-        if (Gui::getSharedInstance()->getElement()->containsPoint(p)) {
-            NSLog(@"You are IN");
-            
+        GUIElement * element = Gui::getSharedInstance()->getElementByTouch(point);
+        if (element != NULL) {
+            element->doExecute(point);
+            [djMixer changeCrossFaderAmount:element->value];
         }
-
     }
 }
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -135,10 +141,12 @@
         TEPoint p;
         p.x = x;
         p.y = y;
-        if (Gui::getSharedInstance()->getElement()->containsPoint(p)) {
-            NSLog(@"You are IN");
-
+        GUIElement * element = Gui::getSharedInstance()->getElementByTouch(point);
+        if (element != NULL) {
+            element->doExecute(point);
+            [djMixer changeCrossFaderAmount:element->value];
         }
+        
        
 
     }

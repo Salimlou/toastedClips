@@ -17,7 +17,7 @@ private:
 	UtilTexture* mTexture;
 	int mCrop[4];
 	
-    float angle;
+    
     
 public:
     GUIControl();
@@ -27,7 +27,9 @@ public:
     int mWidth;
 	int mHeight;
     bool isRotary;
+    bool isSlider;
     TEPoint mPosition;
+    float angle;
     
 };
 

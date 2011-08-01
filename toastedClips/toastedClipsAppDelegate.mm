@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+  
+   
     CGRect frame = [[UIScreen mainScreen] bounds];
     
     EAGLView* view = [[EAGLView alloc] initWithFrame:frame game:nil];

@@ -14,15 +14,36 @@ private:
     TEPoint mPosition;
     GUIControl * constPart;
     GUIControl * floatPart;
-    float value;
-    float maxPosition;
-    float minPosition;
+   
     
     
 public:
     GUIElement();
-    GUIElement(NSString* constPart,NSString* floatPart, TEPoint position, TESize size);
+    GUIElement(NSString* constPart,NSString* floatPart, TEPoint position, TESize size,int type);
     void update();
 	void draw();
-    bool containsPoint(TEPoint point);
+    bool containsPoint(CGPoint point);
+    void doExecute(CGPoint);
+    float value;
+    float defaultValue;
+    float minValue;
+    float maxValue;
+    float maxPosition;
+    float minPosition;
+    
+    float angleForValue(float theValue);
+    
+    float valueForAngle(float theAngle);
+    
+    float angleBetweenCenterAndPoint(CGPoint point);
+    
+    float squaredDistanceToCenter(CGPoint point);
+    
+    
+    CGPoint xForValue(float theValue);
+    
+    float valueForX(CGPoint position);
+    
+    
+
 };

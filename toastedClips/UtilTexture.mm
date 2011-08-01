@@ -29,6 +29,8 @@ UtilTexture::UtilTexture(NSString* resourceName, TEPoint position, TESize size) 
 	} else {
 		width = image.size.width;
 		height = image.size.height;
+        mWidth = image.size.width;
+        mHeight = image.size.height;
         printf("\n image.size %f %f ",image.size.width,image.size.height );
 	}
 	float left;
