@@ -47,7 +47,12 @@ void GUIControl::update() {
 
 void GUIControl::draw() {
 	glBindTexture(GL_TEXTURE_2D, mTexture->mTextureName);
+<<<<<<< HEAD
 	glPushMatrix();
+=======
+    glPushMatrix();
+    
+>>>>>>> blable
     
     if (isRotary) {
         glTranslatef(mPosition.x , mPosition.y, 0.0f);
