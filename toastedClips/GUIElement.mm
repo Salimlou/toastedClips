@@ -32,6 +32,8 @@ GUIElement::GUIElement(NSString* resourceName , NSString* resourceName2, TEPoint
         floatPart->isRotary = false;
         floatPart->isSlider =true;
     }
+    constPart->isSlider = false;
+    constPart->isRotary = false;
     minValue = 0.0f;
 	maxValue = 1.0f;
 	value = defaultValue = 0.5f;
@@ -51,21 +53,18 @@ void GUIElement::draw() {
 
 
 void GUIElement::doExecute(CGPoint point){
-    CGPoint direction;
-    direction.x = point.x - floatPart->mPosition.x + floatPart->mHeight;
-    direction.y = point.y - floatPart->mPosition.y;
-    
-    printf("\n direction  %f  \n", direction.y );
-    printf(" acos     %f ", acos(-point.y) );
-    floatPart->angle =angleBetweenCenterAndPoint(point);
-    
-    printf("value for angle %f ", valueForAngle(floatPart->angle));
-    
-    //if (point.x> floatPart->mPosition.x - (floatPart->mHeight/4)) {
+   
+    if (floatPart->isRotary ) {
+        
+        floatPart->angle =angleBetweenCenterAndPoint(point);
         floatPart->angle = -floatPart->angle;
-    //}
-    
-    value = valueForAngle(floatPart->angle);
+        
+        value = valueForAngle(floatPart->angle);
+    }else if (floatPart->isSlider ){
+        floatPart->mPosition.x =valueForX(point);
+        
+    } 
+  
     
 }
 
@@ -86,7 +85,26 @@ bool GUIElement::containsPoint(CGPoint point) {
 }
 
 
+CGPoint GUIElement::xForValue(float theValue)
 
+{ CGPoint p = CGPointMake(constPart->mPosition.x + constPart->mWidth*theValue, floatPart->mPosition.y) ;
+    if (p.x > constPart->mWidth) {
+        p.x = constPart->mWidth;
+    }else if(p.x< constPart->mPosition.x){
+        p.x = constPart->mPosition.x;
+    }
+	return p;
+}
+
+float GUIElement::valueForX(CGPoint position)
+{   float temp = position.x - constPart->mWidth / constPart->mWidth;
+    if (temp<0) {
+        return 0 ;
+    }else if(temp > 1){
+        return 1;
+    }
+	return temp;
+}
 
 float GUIElement::angleForValue(float theValue)
 {

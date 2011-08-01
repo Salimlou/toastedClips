@@ -14,7 +14,7 @@
 
 
 #include "GuiEngine.h"
-
+#include <vector>
 #include "GUIElement.h"
 class Gui : public GuiEngine {
 public:
@@ -24,9 +24,10 @@ public:
     static Gui * getSharedInstance();
     GUIElement * getElement();
     GUIElement * getElement2();
+    void addControls(GUIElement *);
+    GUIElement * getElementByTouch( CGPoint point);
 private:
-    GUIElement * knob;
-    GUIElement * slide; 
+    std::vector<GUIElement*> mControls;
 
 };
 

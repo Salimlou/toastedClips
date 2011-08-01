@@ -24,8 +24,8 @@
     if (!gui) {
         exit(1);
     }
-	//frame.size.width = game->mWidth * scaleFactor;
-	//frame.size.height = game->mHeight * scaleFactor;
+	frame.size.width = gui->mWidth * scaleFactor;
+	frame.size.height = gui->mHeight * scaleFactor;
     self = [super initWithFrame:frame];
 	if (self) {
        
@@ -103,9 +103,10 @@
         TEPoint p;
         p.x = x;
         p.y = y;
-        if (Gui::getSharedInstance()->getElement()->containsPoint(point)) {
-            NSLog(@"You are IN");
-            
+        GUIElement * element = Gui::getSharedInstance()->getElementByTouch(point);
+        if (element != NULL) {
+            element->doExecute(point);
+            [djMixer changeCrossFaderAmount:element->value];
         }
 
     }
@@ -121,16 +122,10 @@
         TEPoint p;
         p.x = x;
         p.y = y;
-        if (Gui::getSharedInstance()->getElement()->containsPoint(point)) {
-            NSLog(@"You are IN Mpbed");
-            Gui::getSharedInstance()->getElement()->doExecute(point);
-            [djMixer changeCrossFaderAmount:Gui::getSharedInstance()->getElement()->value];
-        }
-
-        if (Gui::getSharedInstance()->getElement2()->containsPoint(point)) {
-            NSLog(@"You are IN Mpbed");
-            Gui::getSharedInstance()->getElement2()->doExecute(point);
-           // [djMixer changeCrossFaderAmount:Gui::getSharedInstance()->getElement()->value];
+        GUIElement * element = Gui::getSharedInstance()->getElementByTouch(point);
+        if (element != NULL) {
+            element->doExecute(point);
+            [djMixer changeCrossFaderAmount:element->value];
         }
     }
 }
@@ -146,10 +141,12 @@
         TEPoint p;
         p.x = x;
         p.y = y;
-        if (Gui::getSharedInstance()->getElement()->containsPoint(point)) {
-            NSLog(@"You are IN");
-
+        GUIElement * element = Gui::getSharedInstance()->getElementByTouch(point);
+        if (element != NULL) {
+            element->doExecute(point);
+            [djMixer changeCrossFaderAmount:element->value];
         }
+        
        
 
     }

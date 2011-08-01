@@ -43,27 +43,43 @@ void Gui::start(NSString * str , NSString * str2) {
     point2.y = 240;
     
     TEPoint point3;
-    point3.x = 100;
-    point3.y = 100; 
+    point3.x = 300;
+    point3.y = 300; 
     
    
     
-    getSharedInstance()->knob = new GUIElement(str,str2, point2, size2,0) ;
-    getSharedInstance()->slide = new GUIElement(@"sliderFixe", @"sliderFloat",point3 , size2,1);
+    GUIElement * knob = new GUIElement(str,str2, point2, size2,0) ;
+    GUIElement * slide = new GUIElement(@"sliderFixe", @"sliderFloat",point3 , size2,1);
+    getSharedInstance()->addControls(knob);
+    getSharedInstance()->addControls(slide);
   
     
 }
 
 void Gui::run() {
-    getSharedInstance()->knob->update();
-    getSharedInstance()->knob->draw();
-    getSharedInstance()->slide->update();
-    getSharedInstance()->slide->draw();
+   std::vector<GUIElement*>::iterator iterator;
+    
+    for (iterator = mControls.begin(); iterator != mControls.end();iterator++) {
+        GUIElement* component = (GUIElement*)(*iterator);
+        component->update();
+        component->draw();
+    }
+   
+}
+GUIElement * Gui::getElementByTouch( CGPoint point) {
+    std::vector<GUIElement*>::iterator iterator;
+    
+    for (iterator = mControls.begin(); iterator != mControls.end();iterator++) {
+        GUIElement* component = (GUIElement*)(*iterator);
+        if (component->containsPoint(point)) {
+            return component;
+        }
+    }
+    return NULL;
 }
 
-GUIElement * Gui::getElement() {
-    return getSharedInstance()->knob;
+void Gui::addControls(GUIElement * temp) {
+    mControls.push_back(temp);
+    
 }
-GUIElement * Gui::getElement2() {
-    return getSharedInstance()->slide;
-}
+

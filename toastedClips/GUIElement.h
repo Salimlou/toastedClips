@@ -40,5 +40,10 @@ public:
     float squaredDistanceToCenter(CGPoint point);
     
     
+    CGPoint xForValue(float theValue);
+    
+    float valueForX(CGPoint position);
+    
+    
 
 };
