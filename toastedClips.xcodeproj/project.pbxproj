@@ -31,7 +31,7 @@
 		C96E30F013E6F73C006415CB /* tes.png in Resources */ = {isa = PBXBuildFile; fileRef = C96E30EE13E6F73C006415CB /* tes.png */; };
 		C96E30F513E7059C006415CB /* tesF.png in Resources */ = {isa = PBXBuildFile; fileRef = C96E30F413E7059C006415CB /* tesF.png */; };
 		C96E30F713E707D7006415CB /* tes-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C96E30F613E707D6006415CB /* tes-01.png */; };
-		C96E30F913E70D1F006415CB /* DJMixer.mm in Sources */ = {isa = PBXBuildFile; fileRef = C96E30F813E70D1E006415CB /* DJMixer.mm */; };
+		C96E30F913E70D1F006415CB /* DJMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = C96E30F813E70D1E006415CB /* DJMixer.m */; };
 		C9835B6013E453ED00AF13B4 /* knob-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C9835B5F13E453ED00AF13B4 /* knob-01.png */; };
 		C9BCCCC713E7175B002054A7 /* FaderF-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BCCCC513E7175B002054A7 /* FaderF-01.png */; };
 		C9BCCCC813E7175B002054A7 /* Fader.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BCCCC613E7175B002054A7 /* Fader.png */; };
@@ -82,7 +82,7 @@
 		C96E30EE13E6F73C006415CB /* tes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tes.png; sourceTree = "<group>"; };
 		C96E30F413E7059C006415CB /* tesF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesF.png; sourceTree = "<group>"; };
 		C96E30F613E707D6006415CB /* tes-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tes-01.png"; sourceTree = "<group>"; };
-		C96E30F813E70D1E006415CB /* DJMixer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DJMixer.mm; sourceTree = "<group>"; };
+		C96E30F813E70D1E006415CB /* DJMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJMixer.m; sourceTree = "<group>"; };
 		C9835B5F13E453ED00AF13B4 /* knob-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "knob-01.png"; sourceTree = "<group>"; };
 		C9BCCCC513E7175B002054A7 /* FaderF-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FaderF-01.png"; sourceTree = "<group>"; };
 		C9BCCCC613E7175B002054A7 /* Fader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fader.png; sourceTree = "<group>"; };
@@ -148,15 +148,10 @@
 		C94B288513E2F626003B5D0B /* toastedClips */ = {
 			isa = PBXGroup;
 			children = (
-				C96E30F813E70D1E006415CB /* DJMixer.mm */,
-				FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */,
-				FA66CB4B13E5A8EF00901A6D /* funkBeats.wav */,
-				FA66CB3F13E5A5CA00901A6D /* InMemoryAudioFile.h */,
-				FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.mm */,
-				FA66CB3813E5A48700901A6D /* DJMixer.h */,
+				FA00141D13E74AD100B31602 /* EntryPoint */,
+				FA00141C13E74AB000B31602 /* ressources */,
+				FA00141A13E74A9300B31602 /* AUDIO */,
 				C94B28C513E323BC003B5D0B /* images */,
-				C94B288E13E2F626003B5D0B /* toastedClipsAppDelegate.h */,
-				C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.mm */,
 				C94B289113E2F626003B5D0B /* iPhone */,
 				C94B289813E2F627003B5D0B /* iPad */,
 				C94B288613E2F626003B5D0B /* Supporting Files */,
@@ -259,6 +254,35 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		FA00141A13E74A9300B31602 /* AUDIO */ = {
+			isa = PBXGroup;
+			children = (
+				C96E30F813E70D1E006415CB /* DJMixer.m */,
+				FA66CB3F13E5A5CA00901A6D /* InMemoryAudioFile.h */,
+				FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.mm */,
+				FA66CB3813E5A48700901A6D /* DJMixer.h */,
+			);
+			name = AUDIO;
+			sourceTree = "<group>";
+		};
+		FA00141C13E74AB000B31602 /* ressources */ = {
+			isa = PBXGroup;
+			children = (
+				FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */,
+				FA66CB4B13E5A8EF00901A6D /* funkBeats.wav */,
+			);
+			name = ressources;
+			sourceTree = "<group>";
+		};
+		FA00141D13E74AD100B31602 /* EntryPoint */ = {
+			isa = PBXGroup;
+			children = (
+				C94B288E13E2F626003B5D0B /* toastedClipsAppDelegate.h */,
+				C94B288F13E2F626003B5D0B /* toastedClipsAppDelegate.mm */,
+			);
+			name = EntryPoint;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -343,7 +367,7 @@
 				C94B28C413E311E1003B5D0B /* GUIControl.mm in Sources */,
 				C90B0D0B13E482DE0074E0E6 /* GUIElement.mm in Sources */,
 				FA66CB4113E5A5CB00901A6D /* InMemoryAudioFile.mm in Sources */,
-				C96E30F913E70D1F006415CB /* DJMixer.mm in Sources */,
+				C96E30F913E70D1F006415CB /* DJMixer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

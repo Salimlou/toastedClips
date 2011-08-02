@@ -7,12 +7,8 @@
 //
 
 #include "Gui.h"
-/*#include "TEGameObject.h"
-#include "TEComponentStack.h"
-#include "StackTableCell.h"
-#include "StackCard.h"*/
-#include "UtilTypes.h"
-#include "GUIControl.h"
+
+
 
 
 #define CARD_SIZE_WIDTH 48
@@ -31,7 +27,7 @@ Gui * Gui::getSharedInstance(){
     }
     return singleton;
 }
-void Gui::start(NSString * str , NSString * str2) {
+void Gui::start() {
     
     
     TESize size2;
@@ -43,15 +39,15 @@ void Gui::start(NSString * str , NSString * str2) {
     point2.y = 240;
     
     TEPoint point3;
-    point3.x = 300;
-    point3.y = 300; 
+    point3.x = 100;
+    point3.y = 200; 
     
    
     
     GUIElement * knob = new GUIElement(@"tes-01",@"tesF", point2, size2,0) ;
-   // GUIElement * slide = new GUIElement(@"sliderFixe", @"sliderFloat",point3 , size2,1);
+    GUIElement * slide = new GUIElement(@"Fader", @"FaderF-01",point3 , size2,1);
     getSharedInstance()->addControls(knob);
-   // getSharedInstance()->addControls(slide);
+    getSharedInstance()->addControls(slide);
   
     
 }

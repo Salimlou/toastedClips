@@ -27,28 +27,28 @@ UtilTexture::UtilTexture(NSString* resourceName, TEPoint position, TESize size) 
 	if (size.height != 0 || size.width != 0) {
 		width = size.width;
 		height = size.height;
-        printf("\nsize %f %f ",width,height );
+      //  printf("\nsize %f %f ",width,height );
 	} else {
 		width = image.size.width;
 		height = image.size.height;
         mWidth = image.size.width;
         mHeight = image.size.height;
-        printf("\n image.size %f %f ",image.size.width,image.size.height );
+      //  printf("\n image.size %f %f ",image.size.width,image.size.height );
 	}
 	float left;
     mPosition = position;
 	if (position.x != 0 || position.y != 0) {
 		left = position.x /width;
-         printf("\nleft %f ",left );
+       //  printf("\nleft %f ",left );
 	} else {
 		left = 0;
-        printf("\nleft %f ",left );
+       // printf("\nleft %f ",left );
 	}
 	
 	
 	const float maxS = ((float)width / image.size.width) + left;
 	const float maxT = (float)height / image.size.height;
-     printf("\nmaxS maxT %f %f ",maxS,maxT );
+    // printf("\nmaxS maxT %f %f ",maxS,maxT );
 	
 	mTextureBuffer[0] = left;//left
 	mTextureBuffer[1] = maxT;//top
@@ -64,8 +64,8 @@ UtilTexture::UtilTexture(NSString* resourceName, TEPoint position, TESize size) 
 	const float bottomY = -(float)height / 2;
 	const float topY = bottomY + height;
     
-    printf("\nleftX rightX %f %f ",leftX,rightX );
-    printf("\nbottomY topY  %f %f ",bottomY,topY );
+   // printf("\nleftX rightX %f %f ",leftX,rightX );
+   // printf("\nbottomY topY  %f %f ",bottomY,topY );
 	
 	mVertexBuffer[0] = leftX;
 	mVertexBuffer[1] = bottomY;
