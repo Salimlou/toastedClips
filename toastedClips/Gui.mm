@@ -44,10 +44,10 @@ void Gui::start() {
     
    
     
-    GUIElement * knob = new GUIElement(@"tes-01",@"tesF", point2, size2,0) ;
+    GUIElement * knob = new GUIElement(@"KNOBBIG",@"KNOBMARKER", point2, size2,0) ;
     GUIElement * slide = new GUIElement(@"Fader", @"FaderF-01",point3 , size2,1);
     getSharedInstance()->addControls(knob);
-    getSharedInstance()->addControls(slide);
+   // getSharedInstance()->addControls(slide);
   
     
 }

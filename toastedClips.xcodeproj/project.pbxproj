@@ -35,8 +35,13 @@
 		C9835B6013E453ED00AF13B4 /* knob-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C9835B5F13E453ED00AF13B4 /* knob-01.png */; };
 		C9BCCCC713E7175B002054A7 /* FaderF-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BCCCC513E7175B002054A7 /* FaderF-01.png */; };
 		C9BCCCC813E7175B002054A7 /* Fader.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BCCCC613E7175B002054A7 /* Fader.png */; };
+<<<<<<< HEAD
 		C9BCCCD413E83340002054A7 /* KNOBMARKER-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BCCCD213E83340002054A7 /* KNOBMARKER-01.png */; };
 		C9BCCCD513E83340002054A7 /* KONBBIG-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BCCCD313E83340002054A7 /* KONBBIG-01.png */; };
+=======
+		FA00142013E8359800B31602 /* KNOBMARKER.png in Resources */ = {isa = PBXBuildFile; fileRef = FA00141E13E8359700B31602 /* KNOBMARKER.png */; };
+		FA00142313E835B900B31602 /* KNOBBIG.png in Resources */ = {isa = PBXBuildFile; fileRef = FA00142213E835B900B31602 /* KNOBBIG.png */; };
+>>>>>>> Commit
 		FA66CB4113E5A5CB00901A6D /* InMemoryAudioFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.mm */; };
 		FA66CB4513E5A89000901A6D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA66CB4413E5A89000901A6D /* AudioToolbox.framework */; };
 		FA66CB4C13E5A8EF00901A6D /* funk stabs 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA66CB4A13E5A8EF00901A6D /* funk stabs 3.wav */; };
@@ -88,8 +93,13 @@
 		C9835B5F13E453ED00AF13B4 /* knob-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "knob-01.png"; sourceTree = "<group>"; };
 		C9BCCCC513E7175B002054A7 /* FaderF-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FaderF-01.png"; sourceTree = "<group>"; };
 		C9BCCCC613E7175B002054A7 /* Fader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fader.png; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		C9BCCCD213E83340002054A7 /* KNOBMARKER-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KNOBMARKER-01.png"; sourceTree = "<group>"; };
 		C9BCCCD313E83340002054A7 /* KONBBIG-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KONBBIG-01.png"; sourceTree = "<group>"; };
+=======
+		FA00141E13E8359700B31602 /* KNOBMARKER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KNOBMARKER.png; sourceTree = "<group>"; };
+		FA00142213E835B900B31602 /* KNOBBIG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KNOBBIG.png; sourceTree = "<group>"; };
+>>>>>>> Commit
 		FA66CB3813E5A48700901A6D /* DJMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJMixer.h; sourceTree = "<group>"; };
 		FA66CB3F13E5A5CA00901A6D /* InMemoryAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMemoryAudioFile.h; sourceTree = "<group>"; };
 		FA66CB4013E5A5CA00901A6D /* InMemoryAudioFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InMemoryAudioFile.mm; sourceTree = "<group>"; };
@@ -243,8 +253,13 @@
 		C94B28C513E323BC003B5D0B /* images */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				C9BCCCD213E83340002054A7 /* KNOBMARKER-01.png */,
 				C9BCCCD313E83340002054A7 /* KONBBIG-01.png */,
+=======
+				FA00142213E835B900B31602 /* KNOBBIG.png */,
+				FA00141E13E8359700B31602 /* KNOBMARKER.png */,
+>>>>>>> Commit
 				C9BCCCC513E7175B002054A7 /* FaderF-01.png */,
 				C9BCCCC613E7175B002054A7 /* Fader.png */,
 				C96E30F613E707D6006415CB /* tes-01.png */,
@@ -352,8 +367,13 @@
 				C96E30F713E707D7006415CB /* tes-01.png in Resources */,
 				C9BCCCC713E7175B002054A7 /* FaderF-01.png in Resources */,
 				C9BCCCC813E7175B002054A7 /* Fader.png in Resources */,
+<<<<<<< HEAD
 				C9BCCCD413E83340002054A7 /* KNOBMARKER-01.png in Resources */,
 				C9BCCCD513E83340002054A7 /* KONBBIG-01.png in Resources */,
+=======
+				FA00142013E8359800B31602 /* KNOBMARKER.png in Resources */,
+				FA00142313E835B900B31602 /* KNOBBIG.png in Resources */,
+>>>>>>> Commit
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
