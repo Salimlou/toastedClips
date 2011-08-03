@@ -7,11 +7,13 @@
 //
 #ifndef GUIELEMENT
 #define GUIELEMENT
-
 #include "UtilTypes.h"
 #include "GUIControl.h"
 
+class GUIControl;
+
 class GUIElement {
+    
 private:
     TEPoint mPosition;
     GUIControl * constPart;

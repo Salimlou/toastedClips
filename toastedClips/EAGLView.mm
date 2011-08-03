@@ -57,7 +57,7 @@
         NSLog(@"taille frame buffer width  %d height   %d",mFramebufferWidth,mFramebufferHeight);
       
         Gui::getSharedInstance()->initGraphics(mFramebufferWidth, mFramebufferHeight);
-         Gui::getSharedInstance()->start(@"konb_circle",@"knob-01"); 
+         Gui::getSharedInstance()->start(); 
         [self startAnimation];
          NSLog(@"create ES context");
     }

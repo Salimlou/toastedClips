@@ -32,8 +32,8 @@ GUIControl::GUIControl(NSString* resourceName, TEPoint position, TESize size,GUI
     mCrop[3] = -mTexture->getBitmapSize().height;
     mPosition = position;
     angle = 0;
-    NSLog(@"TAille image %d %d %d %d  " , mCrop[0] ,mCrop[1],mCrop[2],mCrop[3]);
-    NSLog(@"mPosition %f %f  " , position.x ,position.y);
+   // NSLog(@"TAille image %d %d %d %d  " , mCrop[0] ,mCrop[1],mCrop[2],mCrop[3]);
+   // NSLog(@"mPosition %f %f  " , position.x ,position.y);
 }
 
 void GUIControl::update() {
@@ -47,6 +47,7 @@ void GUIControl::update() {
 
 void GUIControl::draw() {
 	glBindTexture(GL_TEXTURE_2D, mTexture->mTextureName);
+
 	glPushMatrix();
     
     if (isRotary) {
@@ -57,6 +58,7 @@ void GUIControl::draw() {
     }else{
         glTranslatef(mPosition.x ,mPosition.y, 0.0f);
     }
+    //glScalef(2, 2, 2);
     glTexCoordPointer(2, GL_FLOAT, 0, mTexture->mTextureBuffer);
     glVertexPointer(2, GL_FLOAT, 0, mTexture->mVertexBuffer);
     glDrawArrays(GL_TRIANGLE_FAN, 0, 4);

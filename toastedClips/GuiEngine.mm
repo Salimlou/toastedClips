@@ -7,21 +7,11 @@
 //
 
 #include "GuiEngine.h"
-/*
-#include "TEManagerRender.h"
-#include "TEManagerTouch.h"
-#include "TEManagerStack.h"
-#include "TEComponentRender.h"
-#include "TEComponentTouch.h"
-#include "TEComponentStack.h"
-#include "TEGameObject.h"
- */
 #include <OpenGLES/ES1/gl.h>
 #include <OpenGLES/ES1/glext.h>
 #include <OpenGLES/ES2/gl.h>
 #include <OpenGLES/ES2/glext.h>
-#include "UtilTypes.h"
-#include "GUIControl.h"
+
 
 
 #define CARD_SIZE_WIDTH 48

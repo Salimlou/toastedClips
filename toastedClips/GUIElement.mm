@@ -28,12 +28,14 @@ GUIElement::GUIElement(NSString* resourceName , NSString* resourceName2, TEPoint
     if (type==0) {
         floatPart->isRotary = true;
         floatPart->isSlider =false;
-    }else{
+    }else if (type == 1){
         floatPart->isRotary = false;
         floatPart->isSlider =true;
-    }
-    constPart->isSlider = false;
-    constPart->isRotary = false;
+    } 
+        constPart->isSlider = false;
+        constPart->isRotary = false;
+    
+  
     minValue = 0.0f;
 	maxValue = 1.0f;
 	value = defaultValue = 0.5f;
@@ -61,7 +63,9 @@ void GUIElement::doExecute(CGPoint point){
         
         value = valueForAngle(floatPart->angle);
     }else if (floatPart->isSlider ){
-        floatPart->mPosition.x =valueForX(point);
+        floatPart->mPosition.x =xForValue(valueForX(point)).x;
+        printf("\n######doExecute position X %f value   %f #######\n", xForValue(valueForX(point)).x,valueForX(point));
+       
         
     } 
   
@@ -70,7 +74,6 @@ void GUIElement::doExecute(CGPoint point){
 
 bool GUIElement::containsPoint(CGPoint point) {
     bool returnValue = false;
-    TEPoint position = floatPart->mPosition;
     float left = (float)floatPart->mPosition.x - ((float)floatPart->mWidth / 2);
     float right = (float)floatPart->mPosition.x + ((float)floatPart->mWidth / 2);
     float bottom = (float)floatPart->mPosition.y - ((float)floatPart->mHeight / 2);
@@ -78,8 +81,11 @@ bool GUIElement::containsPoint(CGPoint point) {
     
     if ((point.x >= left) && (point.x <= right) && (point.y >= bottom) && (point.y <= top)) {
         returnValue = true;
-        printf("\n in %f %f %f %f \n", left,right,bottom,top);
-        printf("\n in %f %f \n", point.x , point.y);
+        if (floatPart->isSlider) {
+            printf("SLIDE==============================");
+            printf("\n left %f right  %f bottom  %f  top  %f\n", left,right,bottom,top);
+            printf("\n le tap dans x %f y  %f \n", point.x , point.y);
+        }
     }
     return returnValue;
 }
@@ -119,7 +125,6 @@ float GUIElement::valueForAngle(float theAngle)
 float GUIElement::angleBetweenCenterAndPoint(CGPoint point)
 {
 	CGPoint center = CGPointMake(floatPart->mPosition.x - floatPart->mWidth/4.0f,floatPart->mPosition.y + floatPart->mHeight/4.0f);
-    printf("le centre %f %f " , center.x , center.y);
 	// Yes, the arguments to atan2() are in the wrong order. That's because our
 	// coordinate system is turned upside down and rotated 90 degrees. :-)
 	floatPart->angle = atan2(  point.x - center.x , center.y - point.y ) * 180.0f/M_PI;

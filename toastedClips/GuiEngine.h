@@ -9,11 +9,8 @@
 #define GUIENGINE
 
 #include "UtilTypes.h"
-#include "GUIControl.h"
 /*#include <vector>
-
-class TEManager;
-class TEGameObject;*/
+*/
 
 class GuiEngine {
     
@@ -26,7 +23,7 @@ public:
 	int mWidth;
     GuiEngine();
     GuiEngine(int width, int height);
-    virtual void start(NSString * str , NSString * str2) =0;
+    virtual void start() =0;
     virtual void run() =0;
     void addObject(/*TEGameObject* gameObject*/);
     void initGraphics(int width, int height);

@@ -9,10 +9,10 @@
 #define GUICONTROL
 
 
-#include "UtilTypes.h"
+
 #include "UtilTexture.h"
 #include "GUIElement.h"
-
+class GUIElement;
 
 class GUIControl {
 private:
